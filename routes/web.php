@@ -20,14 +20,14 @@ Route::get('/', function () {
 //Basic route
 Route::get('/basicRoute', function () {
     return 'Welcome in Basic Route';
-}) -> name('basicRoute');
+})->name('basicRoute');
 
 //Required parameter route
-Route::get('/routeWithID/{id}', function($id){
-    return 'Welcome in required parameter route. Parameter = '.$id;
-}) -> name('routeWithRequiredArgument');
+Route::get('/routeWithID/{id}', function ($id) {
+    return 'Welcome in required parameter route. Parameter = ' . $id;
+})->name('routeWithRequiredArgument');
 
 //Optional parameter route
-Route::get('/optionalParamRoute/{id?}', function($id = null){
-    return 'Welcome in optional parameter route. Parameter = '.$id;
-}) -> name('routeWithOptionalArgument');
+Route::get('/optionalParamRoute/{id?}', function ($id = null) {
+    return 'Welcome in optional parameter route. Parameter = ' . $id;
+})->name('routeWithOptionalArgument');
