@@ -31,3 +31,7 @@ Route::get('/routeWithID/{id}', function ($id) {
 Route::get('/optionalParamRoute/{id?}', function ($id = null) {
     return 'Welcome in optional parameter route. Parameter = ' . $id;
 })->name('routeWithOptionalArgument');
+
+Route::get('landing', function (){
+    return view('landing');
+});
