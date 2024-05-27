@@ -82,6 +82,7 @@ return [
     |
     */
 
+    //Gomaa - Change app language from here
     'locale' => 'en',
 
     /*
